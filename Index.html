@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <form action="#" method="post">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" maxlength="25" required>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" maxlength="25" required>
+
+            <p>Can you meet?</p>
+            <label><input type="radio" name="meet" value="Yes" required> Yes</label>
+            <label><input type="radio" name="meet" value="No" required> No</label>
+
+            <label for="days">Days:</label>
+            <select name="days" id="days">
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+            </select>
+
+            <p>Times:</p>
+            <label><input type="checkbox" name="times" value="9am"> 9am</label>
+            <label><input type="checkbox" name="times" value="11am"> 11am</label>
+            <label><input type="checkbox" name="times" value="1pm"> 1pm</label>
+            <label><input type="checkbox" name="times" value="4pm"> 4pm</label>
+            <label><input type="checkbox" name="times" value="6pm"> 6pm</label>
+
+            <label for="comments">Comments:</label>
+            <textarea name="comments" id="comments" rows="4"></textarea>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
